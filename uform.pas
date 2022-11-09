@@ -421,6 +421,7 @@ begin
     flag:=False;
     for i:=0 to 63 do for j:=0 to 63 do if UnitGroup(i,j) then flag:=True;
   end;
+  //for i:=1 to 63 do if vGroup[i].Enabled then begin
   for i:=0 to 63 do if vGroup[i].Enabled then begin
     imgShell[i].Top:=GetBlockPos(vGroup[i].T);
     imgShell[i].Left:=GetBlockPos(vGroup[i].L);
